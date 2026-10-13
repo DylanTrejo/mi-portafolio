@@ -2,8 +2,83 @@
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    color: #212529;
+    background-color: #000;
+    color: #fff;
+}
+
+body * {
+    color: #fff !important;
+}
+
+.bg-light,
+.bg-white,
+.card {
+    background-color: #151515 !important;
+}
+
+.list-group-item {
+    background-color: #151515 !important;
+    border-color: #333;
+}
+
+.portfolio-subtitle {
+    color: #b3b3b3 !important;
+}
+
+/* Barra de navegación */
+.portfolio-navbar {
+    background-color: #222;
+}
+
+.portfolio-footer {
+    background-color: #222 !important;
+}
+
+.portfolio-navbar .container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
+
+.portfolio-nav-brand {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+    color: #fff;
+    font-weight: bold;
+}
+
+.portfolio-nav-left {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+}
+
+.portfolio-nav-right {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+}
+
+.portfolio-navbar .portfolio-nav-link,
+.btn-primary {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ff1744;
+    border-radius: 8px;
+    background-color: #ff1744;
+    box-shadow: 0 0 8px rgba(255, 23, 68, 0.65);
+    color: #fff;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.portfolio-navbar .portfolio-nav-link:hover,
+.portfolio-navbar .portfolio-nav-link:focus-visible,
+.btn-primary:hover,
+.btn-primary:focus-visible {
+    background-color: #e60032;
+    border-color: #e60032;
+    box-shadow: 0 0 14px rgba(255, 23, 68, 0.9);
+    color: #fff;
 }
 
 /* Encabezados */
